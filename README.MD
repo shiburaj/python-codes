@@ -17,3 +17,9 @@
   13. WAP to find the factorial of the entered number.
   14. WAP to find the second largest number.
   15. WAP to print pattern.
+  16. WAP to make a function which calculates b^2-4ac
+  17. WAP to make a Calculator with the help of functions.
+  18. WAP to list all prime numbers in a given range.
+  19. Write the previous program using recursive functions.
+  20. WAP to make the calculator of Task 17 using modules.
+  21. WAP to read a marks file and print the calculated results.
