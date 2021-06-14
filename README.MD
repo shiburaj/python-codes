@@ -23,3 +23,12 @@
   19. Write the previous program using recursive functions.
   20. WAP to make the calculator of Task 17 using modules.
   21. WAP to read a marks file and print the calculated results.
+
+
+## Case Studies
+
+1. Face Recognition & Detection
+
+```bash
+pip install opencv-contrib-python
+```

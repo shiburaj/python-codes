@@ -1,3 +1,13 @@
+"""
+Problem Statement:  WAP to implement a calculator using Modules.
+Author:             Prof. Shiburaj
+INPUT:
+add 5 5 5
+
+OUTPUT:
+15
+"""
+
 import calculator
 
 opr, *x = input().split()

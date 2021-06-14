@@ -1,3 +1,14 @@
+"""
+Problem Statement:  WAP to read a files of marks and calculate percentage and assign ranks.
+Author:             Prof. Shiburaj
+INPUT: marks.csv
+
+OUTPUT:
+roll_number,name,physics,chem,maths,total,percentage,Rank
+6,Rey,63,60,94,217,72.33,1
+7,Khan,66,66,77,209,69.67,2
+"""
+
 f = open('marks.csv', 'r+t', encoding='utf-8')
 header = f.readline()
 output = []

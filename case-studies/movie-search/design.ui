@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.1">
+  <object class="tk.Toplevel" id="main_window">
+    <property name="geometry">480x320</property>
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Labelframe" id="frm_search">
+        <property name="height">100</property>
+        <property name="text" translatable="yes">Search Movie</property>
+        <property name="width">800</property>
+        <layout manager="pack">
+          <property name="propagate">True</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="lbl_app_name">
+            <property name="anchor">center</property>
+            <property name="background">#8000ff</property>
+            <property name="font">{Agency FB} 24 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">Movie Search</property>
+            <property name="width">800</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry2">
+            <property name="font">{Arial} 12 {}</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">search movie...</property>
+            <property name="width">40</property>
+            <bind sequence="&lt;Enter&gt;" handler="search_movie" add="" />
+            <layout manager="pack">
+              <property name="pady">10</property>
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Labelframe" id="results">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Results</property>
+        <property name="width">800</property>
+        <layout manager="pack">
+          <property name="propagate">True</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label3">
+            <property name="background">#e2e2e2</property>
+            <property name="cursor">hand2</property>
+            <property name="padding">5</property>
+            <property name="relief">flat</property>
+            <property name="text" translatable="yes">movie 1</property>
+            <property name="width">800</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label4">
+            <property name="background">#f0f0f0</property>
+            <property name="cursor">hand2</property>
+            <property name="padding">5</property>
+            <property name="text" translatable="yes">movie 2</property>
+            <property name="width">800</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="tk.Toplevel" id="result_window">
+    <property name="geometry">800x610</property>
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Frame" id="frame2">
+        <property name="height">610</property>
+        <property name="width">800</property>
+        <layout manager="pack">
+          <property name="propagate">True</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label5">
+            <property name="anchor">center</property>
+            <property name="font">{Arial} 24 {}</property>
+            <property name="foreground">#8000ff</property>
+            <property name="padding">5</property>
+            <property name="text" translatable="yes">WAR</property>
+            <property name="width">800</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="separator1">
+            <property name="orient">vertical</property>
+            <layout manager="pack">
+              <property name="expand">true</property>
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="poster">
+            <property name="font">TkDefaultFont</property>
+            <property name="image">poster.png</property>
+            <layout manager="pack">
+              <property name="pady">10</property>
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Text" id="text1">
+            <property name="background">#dbdbdb</property>
+            <property name="borderwidth">0</property>
+            <property name="font">{Arial} 10 {}</property>
+            <property name="height">10</property>
+            <property name="padx">20</property>
+            <property name="state">disabled</property>
+            <property name="text" translatable="yes">India's top agent Kabir (Hrithik Roshan) leads the Elite Shadow Unit of R&amp;AW, a compact group of the crème de la crème of the armed forces who are personally trained by him and work with him on various high-risk missions across the world. Among Kabir and Colonel Luthra's key targets are an international arms baron Rizwan Ilyasi who has been key in various acts of terrorism against the country. Khalid (Tiger Shroff) has fought his way up the ranks of the Indian armed forces. His greatest challenge and battle has been to fight against the sins of his father, once a decorated soldier working with Kabir who had turned a traitor. His ambition has been to join Kabir's team to remove any stains on their family name. Kabir is not keen due to their past history, but Colonel Luthra requests him to, and gradually Kabir is also impressed by Khalid's intense dedication and grit. Khalid becomes Kabir's greatest soldier ever, flirting with death repeatedly in mission after mission as they go after </property>
+            <property name="undo">false</property>
+            <property name="width">800</property>
+            <property name="wrap">word</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label7">
+            <property name="font">{Arial} 12 {bold}</property>
+            <property name="justify">left</property>
+            <property name="text" translatable="yes">Director : Prof. Shiburaj</property>
+            <property name="width">800</property>
+            <layout manager="pack">
+              <property name="padx">20</property>
+              <property name="pady">10</property>
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label8">
+            <property name="font">{Arial} 12 {}</property>
+            <property name="foreground">#008040</property>
+            <property name="text" translatable="yes">Rating : 5.6</property>
+            <property name="width">800</property>
+            <layout manager="pack">
+              <property name="padx">20</property>
+              <property name="pady">10</property>
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="btn_close">
+            <property name="command" type="command" cbtype="simple">close_result_window</property>
+            <property name="text" translatable="yes">Close</property>
+            <layout manager="pack">
+              <property name="pady">5</property>
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
